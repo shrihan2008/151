@@ -1,9 +1,9 @@
 AFRAME.registerComponent('car',{
     schema:{
-        link:{type:"string" , link:"car/scene.gltf"}
+        modelRef: { type: "string", default: "../car/scene.gltf" }
     },
     init:function(){
-        console.log(this.data.message)
+        console.log(this.data.modelRef)
     }
 
 

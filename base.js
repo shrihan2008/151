@@ -5,7 +5,9 @@ AFRAME.registerComponent("base",{
   height:{type:"number",default:30}
       },
       init:function(){
-         
+         window.addEventListener('click',(e)=>{
+            this.data.height=this.data.height+0.02
+        })
          this.el.getAttribute("geometry",{
             primitive:"cylinder",
             radius:this.data.radius,
