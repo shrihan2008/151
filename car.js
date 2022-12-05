@@ -1,13 +1,15 @@
 AFRAME.registerComponent('car',{
     schema:{
-        modelRef: { type: "string", default: "../car/scene.gltf" }
+        modelRef: { type: "string", default: "./car/scene.gltf" }
     },
     init: function() { 
-        this.el.setAttribute("gltf-model", this.data.modelRef); 
+        this.el.setAttribute("gltf-model", this.data.modelRef,{; 
         const position = { x: 0, y: 50, z: 80 };
          const rotation = { x: 0, y: -100, z: 0 }; 
          this.el.setAttribute("position", position); 
          this.el.setAttribute("rotation", rotation);
-    }
-
+         this.el.setAttribute("image", this.data.modelRef);
+    })
+}
+ 
 })
