@@ -16,7 +16,7 @@
 
 AFRAME.registerComponent('car',{
     schema:{
-               modelRef: { type: "string", default: "C:\3D_models\151\car" },
+               modelRef: { type: "string", default: "car/scene.gltf" },
                postion:{type:"number",default:150},
                rotation:{type:"number",default:30}
            },
