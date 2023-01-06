@@ -2,7 +2,7 @@ AFRAME.registerComponent("base",{
 
     schema:{
   radius:{type:"number",default:150},
-  height:{type:"number",default:30}
+  height:{type:"number",default:3}
       },
       init:function(){
          window.addEventListener('click',(e)=>{
